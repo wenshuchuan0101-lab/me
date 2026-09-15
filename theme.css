@@ -1,0 +1,28 @@
+:root{--ink:#f1df9b;--paper:#0b0b0a;--muted:#a49366;--line:rgba(212,175,55,.28);--accent:#d4af37}
+body{background:#0b0b0a;color:var(--ink)}
+.site-header.is-solid,.site-header.is-scrolled{background:rgba(11,11,10,.95);color:var(--ink);border-bottom-color:var(--line)}
+.wordmark-en,.project-en,.section-index,.site-footer,.about-fields,.skills-list small,.contact-links span{color:var(--muted)}
+.home-hero{background:#050504;color:var(--ink)}
+.hero-atmosphere{background:radial-gradient(circle at 65% 35%,rgba(212,175,55,.28),transparent 33%),linear-gradient(125deg,#030303 10%,#262015 52%,#090908)}
+.hero-atmosphere::before{border-color:rgba(212,175,55,.36)}
+.hero-orbit{border-color:rgba(212,175,55,.34)}
+.home-hero .eyebrow{color:rgba(241,223,155,.72)}
+.hero-intro{color:rgba(241,223,155,.8)}
+.visual-fengyu{background:linear-gradient(145deg,#090b0a,#4e4322 47%,#b28b2f)}
+.visual-gift{background:linear-gradient(145deg,#08090a,#3f3923 48%,#9f843d)}
+.visual-cangfeng{background:linear-gradient(145deg,#090807,#4a3820 52%,#a77c2d)}
+.visual-fengyu::before{background:linear-gradient(90deg,transparent 36%,rgba(241,223,155,.34) 37%,transparent 38%),linear-gradient(160deg,transparent 55%,rgba(11,10,6,.72) 56%,transparent 65%)}
+.visual-gift::before{background:radial-gradient(circle at 68% 36%,#f1df9b 0 2%,transparent 3%),radial-gradient(circle at 68% 36%,rgba(241,223,155,.38),transparent 26%)}
+.visual-cangfeng::before{background:linear-gradient(128deg,transparent 42%,rgba(212,175,55,.48) 43% 44%,transparent 45%),linear-gradient(15deg,transparent 55%,rgba(16,11,5,.75) 56% 66%,transparent 67%)}
+.placeholder-copy{color:rgba(241,223,155,.94)}
+.placeholder-copy small{color:rgba(241,223,155,.66)}
+.project-type,.project-summary,.body-copy,.detail-grid section>p:last-child{color:#b7a978}
+.project-number,.placeholder-note{color:var(--accent)}
+.site-footer{border-top-color:var(--line)}
+.about-hero h1 span{color:var(--muted)}
+.skills-list li,.contact-links a{border-color:var(--line)}
+.contact-links a{color:var(--ink)}
+.gallery-grid>div{background:#17140d;border-color:var(--muted);color:var(--muted)}
+.media-placeholder{border-color:var(--muted);color:var(--muted)}
+.process li{border-color:var(--accent)}
+@media(max-width:700px){.site-nav{background:#0b0b0a;color:var(--ink)}}

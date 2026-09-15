@@ -51,3 +51,17 @@ document.querySelectorAll('a[href]').forEach((link) => {
     window.setTimeout(() => { window.location.href = href; }, 220);
   });
 });
+
+const videoNames = { 'fengyu.html': 'fengyu.mp4', 'gift.html': 'gift.mp4', 'cangfeng.html': 'cangfeng.mp4' };
+const pageVideo = videoNames[window.location.pathname.split('/').pop()];
+const videoPlaceholder = document.querySelector('.media-placeholder');
+if (pageVideo && videoPlaceholder) {
+  const slot = document.createElement('div');
+  slot.className = 'video-slot';
+  slot.innerHTML = `<video controls preload="metadata" playsinline aria-label="作品视频"><source src="../assets/videos/${pageVideo}" type="video/mp4">当前浏览器不支持视频播放。</video><p class="video-note">将视频放入 assets/videos/${pageVideo}</p>`;
+  videoPlaceholder.replaceWith(slot);
+  const video = slot.querySelector('video');
+  const note = slot.querySelector('.video-note');
+  video.addEventListener('play', () => { note.textContent = '正在播放 · ' + pageVideo; });
+  video.addEventListener('pause', () => { note.textContent = '已暂停 · ' + pageVideo; });
+}
